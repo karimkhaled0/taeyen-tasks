@@ -1,0 +1,9 @@
+{
+  "yaml.validate": false,
+  "files.associations": {
+    "pnpm-lock.yaml": "yaml"
+  },
+  "[yaml]": {
+    "editor.defaultFormatter": "redhat.vscode-yaml"
+  }
+}
