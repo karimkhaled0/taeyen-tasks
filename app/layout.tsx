@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Cairo } from "next/font/google";
+import { Cairo } from "next/font/google";
 import "./globals.css";
 import HeroUiProviderComponent from "@/components/providers/hero-ui-provider";
 

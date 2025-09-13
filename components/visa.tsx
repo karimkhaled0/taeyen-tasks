@@ -1,22 +1,12 @@
 "use client";
-import {
-  Card,
-  Link,
-  CardFooter,
-  CardBody,
-  CardHeader,
-  Badge,
-  Divider,
-} from "@heroui/react";
+import { Card, CardFooter, CardBody, CardHeader, Divider } from "@heroui/react";
 import UserDetailsComponent from "./user-details";
 import React, { useState } from "react";
 import JobDetailsComponent from "./job-details";
 import FileUploadComponent, { UploadedFile } from "./file-upload";
 import StatusComponent from "./status";
 
-type Props = {};
-
-const VisaComponent = (props: Props) => {
+const VisaComponent = () => {
   const [ticket, setTicket] = useState<UploadedFile | null>(null);
   const [visa, setVisa] = useState<UploadedFile | null>(null);
 

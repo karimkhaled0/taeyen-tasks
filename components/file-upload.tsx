@@ -1,8 +1,8 @@
 "use client";
 
-import { CheckIcon, FileIcon, XIcon } from "lucide-react";
+import { CheckIcon, FileIcon } from "lucide-react";
 import Image from "next/image";
-import React, { useState, useCallback } from "react";
+import React, { useCallback } from "react";
 import { useDropzone } from "react-dropzone";
 
 type Props = {
@@ -149,9 +149,9 @@ interface FilePreviewProps {
 
 const FilePreview = ({
   uploadedFile,
-  onRemove,
-  formatFileSize,
-}: FilePreviewProps) => {
+}: // onRemove,
+// formatFileSize,
+FilePreviewProps) => {
   const { file, preview } = uploadedFile;
   const isPDF = file.type === "application/pdf";
   const isImage = file.type.startsWith("image/");
